@@ -12,7 +12,7 @@ class ListCommand extends Command
      *
      * @var string
      */
-    protected $name = 'module:list';
+    protected $name = 'core:list';
 
     /**
      * The console command description.

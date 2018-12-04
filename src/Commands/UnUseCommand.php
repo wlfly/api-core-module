@@ -11,7 +11,7 @@ class UnUseCommand extends Command
      *
      * @var string
      */
-    protected $name = 'module:unuse';
+    protected $name = 'core:unuse';
 
     /**
      * The console command description.

@@ -25,7 +25,7 @@ class ModelMakeCommand extends GeneratorCommand
      *
      * @var string
      */
-    protected $name = 'module:make-model';
+    protected $name = 'core:make-model';
 
     /**
      * The console command description.

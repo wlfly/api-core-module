@@ -18,7 +18,7 @@ class EventMakeCommand extends GeneratorCommand
      *
      * @var string
      */
-    protected $name = 'module:make-event';
+    protected $name = 'core:make-event';
 
     /**
      * The console command description.

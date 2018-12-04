@@ -22,7 +22,7 @@ class CommandMakeCommandTest extends BaseTestCase
         parent::setUp();
         $this->modulePath = base_path('modules/Blog');
         $this->finder = $this->app['files'];
-        $this->artisan('module:make', ['name' => ['Blog']]);
+        $this->artisan('core:make', ['name' => ['Blog']]);
     }
 
     public function tearDown()
@@ -34,7 +34,7 @@ class CommandMakeCommandTest extends BaseTestCase
     /** @test */
     public function it_generates_a_new_console_command_class()
     {
-        $this->artisan('module:make-command', ['name' => 'MyAwesomeCommand', 'module' => 'Blog']);
+        $this->artisan('core:make-command', ['name' => 'MyAwesomeCommand', 'module' => 'Blog']);
 
         $this->assertTrue(is_file($this->modulePath . '/Console/MyAwesomeCommand.php'));
     }
@@ -42,7 +42,7 @@ class CommandMakeCommandTest extends BaseTestCase
     /** @test */
     public function it_generated_correct_file_with_content()
     {
-        $this->artisan('module:make-command', ['name' => 'MyAwesomeCommand', 'module' => 'Blog']);
+        $this->artisan('core:make-command', ['name' => 'MyAwesomeCommand', 'module' => 'Blog']);
 
         $file = $this->finder->get($this->modulePath . '/Console/MyAwesomeCommand.php');
 
@@ -52,7 +52,7 @@ class CommandMakeCommandTest extends BaseTestCase
     /** @test */
     public function it_uses_set_command_name_in_class()
     {
-        $this->artisan('module:make-command', ['name' => 'MyAwesomeCommand', 'module' => 'Blog', '--command' => 'my:awesome']);
+        $this->artisan('core:make-command', ['name' => 'MyAwesomeCommand', 'module' => 'Blog', '--command' => 'my:awesome']);
 
         $file = $this->finder->get($this->modulePath . '/Console/MyAwesomeCommand.php');
 
@@ -64,7 +64,7 @@ class CommandMakeCommandTest extends BaseTestCase
     {
         $this->app['config']->set('modules.paths.generator.command.path', 'Commands');
 
-        $this->artisan('module:make-command', ['name' => 'AwesomeCommand', 'module' => 'Blog']);
+        $this->artisan('core:make-command', ['name' => 'AwesomeCommand', 'module' => 'Blog']);
 
         $file = $this->finder->get($this->modulePath . '/Commands/AwesomeCommand.php');
 

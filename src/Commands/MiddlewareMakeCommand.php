@@ -24,7 +24,7 @@ class MiddlewareMakeCommand extends GeneratorCommand
      *
      * @var string
      */
-    protected $name = 'module:make-middleware';
+    protected $name = 'core:make-middleware';
 
     /**
      * The console command description.

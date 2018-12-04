@@ -17,7 +17,7 @@ class MigrateResetCommand extends Command
      *
      * @var string
      */
-    protected $name = 'module:migrate-reset';
+    protected $name = 'core:migrate-reset';
 
     /**
      * The console command description.

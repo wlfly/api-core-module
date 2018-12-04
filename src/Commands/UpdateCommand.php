@@ -15,7 +15,7 @@ class UpdateCommand extends Command
      *
      * @var string
      */
-    protected $name = 'module:update';
+    protected $name = 'core:update';
 
     /**
      * The console command description.

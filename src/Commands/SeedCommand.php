@@ -22,7 +22,7 @@ class SeedCommand extends Command
      *
      * @var string
      */
-    protected $name = 'module:seed';
+    protected $name = 'core:seed';
 
     /**
      * The console command description.

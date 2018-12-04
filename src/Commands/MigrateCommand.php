@@ -15,7 +15,7 @@ class MigrateCommand extends Command
      *
      * @var string
      */
-    protected $name = 'module:migrate';
+    protected $name = 'core:migrate';
 
     /**
      * The console command description.

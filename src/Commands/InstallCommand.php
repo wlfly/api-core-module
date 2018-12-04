@@ -15,7 +15,7 @@ class InstallCommand extends Command
      *
      * @var string
      */
-    protected $name = 'module:install';
+    protected $name = 'core:install';
 
     /**
      * The console command description.

@@ -14,7 +14,7 @@ class ModuleMakeCommand extends Command
      *
      * @var string
      */
-    protected $name = 'module:make';
+    protected $name = 'core:make';
 
     /**
      * The console command description.

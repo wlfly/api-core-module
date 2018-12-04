@@ -16,7 +16,7 @@ class MigrateRefreshCommand extends Command
      *
      * @var string
      */
-    protected $name = 'module:migrate-refresh';
+    protected $name = 'core:migrate-refresh';
 
     /**
      * The console command description.

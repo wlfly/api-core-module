@@ -15,7 +15,7 @@ class MigrateStatusCommand extends Command
      *
      * @var string
      */
-    protected $name = 'module:migrate-status';
+    protected $name = 'core:migrate-status';
 
     /**
      * The console command description.
